@@ -18,10 +18,7 @@ No Docker Desktop, nor full virtual machine.
 
 ## Install
 
-```
-make.bat install
-```
-will create the `dodaemon` WSL version 2 distribution in the local folder.
+<TODO>
 
 ## Usage
 
@@ -41,4 +38,4 @@ Or opening a new `dodaemon.exe` command line it will be also accessible through 
 
 ## Released
 
-You can also donwload the already built package from the Releases with the Alpine version indicated.
+You can also donwload the already built package from the Releases with the Alpine version indicated and follow the [Usage](#usage) section.
