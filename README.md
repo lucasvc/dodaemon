@@ -4,7 +4,7 @@ This is a simple way of having an _only_ Docker Daemon executing on a Windows.
 
 It is bases it use in,
 
-* Windows Subsystem for Linux (aka WSL) in its 2 version.
+* [Windows Subsystem for Linux](https://learn.microsoft.com/en-gb/windows/wsl/about#what-is-wsl-2) (aka WSL) in its version 2.
 * [`wsldl`](https://github.com/yuk7/wsldl/) tool by [yuk7](https://github.com/yuk7), which allows to have multiple Linux distributions organized as _folders_.
 * A minimal Linux root filesystem (aka `rootfs`), currently an [Alpine](https://alpinelinux.org/) using the "Minimal root filesystem" package.
 
@@ -16,9 +16,34 @@ No Docker Desktop, nor full virtual machine.
 * Windows 10 2004 and higher (Build 19041 and higher).
 * WSL version 2 is enabled.
 
-## Install
+## Create
 
-<TODO>
+// TODO make.ps1 create
+```
+.\make.ps1
+```
+
+### Options
+
+| Option | Description |
+| ------ | ----------- |
+|`Destination` | Can be used to select installation folder |
+
+### Export
+
+// TODO make.ps1 export
+One of the most fancy things of WSL is its portability: a "packaged" can be used into different computers without issues. To export a current installed one,
+
+```
+.\dodaemon.exe backup --vhdx && Rename-Item backup.ext4.vhdx install.ext4.vhdx
+```
+
+Packaging files:
+  - `install.ext4.vhdx`
+  - `dodaemon.exe`
+  - `ddd.bat`
+
+are enough to be used on other computer.
 
 ## Usage
 
