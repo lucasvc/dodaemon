@@ -18,20 +18,21 @@ No Docker Desktop, nor full virtual machine.
 
 ## Create
 
-// TODO make.ps1 create
 ```
 .\make.ps1
 ```
+// TODO replace with a `-Create` flag
 
 ### Options
 
-| Option | Description |
-| ------ | ----------- |
-|`Destination` | Can be used to select installation folder |
+| Option | Description | Mandatory |
+| ------ | ----------- | --------- |
+|`Destination` | Can be used to select installation folder | No |
 
-### Export
+## Export
 
-// TODO make.ps1 export
+// TODO create `make.ps1 -Export`
+// until that...
 One of the most fancy things of WSL is its portability: a "packaged" can be used into different computers without issues. To export a current installed one,
 
 ```
@@ -39,9 +40,9 @@ One of the most fancy things of WSL is its portability: a "packaged" can be used
 ```
 
 Packaging files:
-  - `install.ext4.vhdx`
-  - `dodaemon.exe`
-  - `ddd.bat`
+- `install.ext4.vhdx`
+- `dodaemon.exe`
+- `ddd.bat`
 
 are enough to be used on other computer.
 
