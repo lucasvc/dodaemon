@@ -1,7 +1,7 @@
 param (
     [string]$AlpineMajor = "3", # TODO max
-    [string]$AlpineMinor = "19", # TODO max
-    [string]$AlpinePatch = "1", # TODO max
+    [string]$AlpineMinor = "20", # TODO max
+    [string]$AlpinePatch = "0", # TODO max
     [string]$Destination
 )
 
